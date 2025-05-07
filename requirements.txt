@@ -5,3 +5,6 @@ Jinja2==3.1.4
 mysqlclient==2.2.4
 SQLAlchemy==2.0.31
 Werkzeug==3.0.3
+requests==2.32.3
+Flask-Mail==0.9.1
+python-dotenv==1.1.0

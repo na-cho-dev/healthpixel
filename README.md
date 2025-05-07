@@ -51,7 +51,15 @@ cd healthpixel
 __Install dependencies:__
 All dependencies that would be needed by the application are all in the **requirement.txt**. Use the command below to install them.
 ```
-pip install -r requirement.txt
+sudo apt install pkg-config libmysqlclient-dev
+
+pip install -r requirements.txt
+
+sudo apt update
+
+sudo apt install mysql-server
+
+sudo systemctl start mysql
 ```
 
 __Set up the database:__
@@ -62,6 +70,7 @@ __Set up the database:__
 __Create a MySQL database and configure the connection settings in the `env_setup` file:__
 ```
 sudo mysql -u root -p < setup_mysql_db.sql
+
 source env_setup
 ```
 __Start the application:__
